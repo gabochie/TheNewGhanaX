@@ -1,51 +1,47 @@
 ---
 layout: default
-title: "About TheNewGhanaX — Our Mission & The 10 Traps Framework"
+title: "About TheNewGhanaX — Our Mission"
 permalink: /about/
-description: "Learn about TheNewGhanaX mission to unshackle the Ghanaian mind through awareness of systemic psychological traps. Discover our 10 traps framework for youth development."
-keywords: ["about TheNewGhanaX", "mission", "10 traps framework", "Ghanaian youth development", "psychological awareness"]
+description: "Learn how TheNewGhanaX names the mental traps holding Ghanaian youth back and offers a framework for practical liberation."
+keywords: ["about TheNewGhanaX", "mission", "mental liberation", "youth development", "Ghana mindset"]
 ---
 
 # About TheNewGhanaX
 
-## The Mission
+## Our mission
+TheNewGhanaX exists to name the invisible traps that keep Ghanaian youth from reaching their full potential.
 
-TheNewGhanaX exists to **name the invisible**—the psychological and systemic traps that keep Ghanaian youth from reaching their full potential.
+This is not blame. It is clarity. Once you see the trap, you can choose differently.
 
-This isn't about blame. It's about **awareness**. Because once you see the trap, you can step out of it.
+## What we believe
+- Real change starts in the mind.
+- Young Ghanaians can outthink the old systems.
+- Honesty is more useful than comfort.
+- Strategy beats waiting.
 
-## The 10 Traps Framework
+## The framework
+Every trap has four parts:
 
-Every trap in our framework has four parts:
+1. **What it is** — the idea or habit behind the trap
+2. **What it does** — the damage it causes
+3. **Where you see it** — real life signs and examples
+4. **How to break free** — the first choice that changes the pattern
 
-1. **Description** — What it is
-2. **The Effect** — How it limits us
-3. **Real-Life Symptoms** — Where you see it
-4. **How to Break Free** — Steps toward liberation
+These traps are not only in society. They are in all of us, in different measures. The work begins with noticing.
 
-These traps aren't just "out there" in society. They're **in all of us**, in different measures, in different moments. The work is noticing them—and choosing differently.
+## Who this is for
+- Ghanaian youth who feel stuck but don’t know why
+- Thinkers who want a sharper diagnosis of the problem
+- Builders who refuse to trade impact for approval
+- Anyone ready to move from reaction to intention
 
-## Who This Is For
+## What comes next
+- Deep-dive essays on every trap
+- Practical guides that help you act, not just understand
+- Stories from people breaking these patterns in Ghana
+- Tools that turn awareness into real progress
 
-- **Ghanaian youth** who feel stuck but don't know why
-- **Thinkers** who question why things are the way they are
-- **Builders** who want to create something that outlasts them
-- **Anyone** ready to trade comfortable delusions for uncomfortable truth
+## Join the work
+Read the traps. Pick the one that shows up in your life. Share it with someone who needs a different perspective.
 
-## What Comes Next
-
-The 10 traps are just the beginning. We'll expand into:
-- Deep-dive essays on each trap
-- Personal stories of trap-breaking
-- Practical guides for building differently
-- Resources for mental and systemic liberation
-
-## The Invitation
-
-Read the traps. See which ones show up in your life. Share the ones that resonate. Build anyway.
-
-**The future of Ghana depends on minds that are free.**
-
----
-
-*TheNewGhanaX — Unshackling the Ghanaian Mind*
+<a href="/traps/" class="cta-button">Explore the traps</a>
