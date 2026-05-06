@@ -1,0 +1,176 @@
+---
+layout: default
+title: "Blog Archive — Essays & Insights"
+permalink: /blog/
+description: "Archive of all essays, articles, and insights from TheNewGhanaX. Deep dives into the 10 traps and broader themes around Ghanaian youth development."
+keywords: ["blog", "essays", "archive", "Ghanaian youth", "psychological traps", "thought leadership"]
+---
+
+<div class="blog-archive">
+  <header class="archive-header">
+    <h1>Blog Archive</h1>
+    <p class="archive-description">
+      Essays, deep-dives, and insights exploring the 10 traps and beyond. 
+      New perspectives on Ghanaian psychology, youth development, and national transformation.
+    </p>
+  </header>
+
+  <!-- Featured/Sticky Posts -->
+  <section class="featured-posts" aria-labelledby="featured-heading">
+    <h2 id="featured-heading" class="section-title">The Foundation</h2>
+    <div class="posts-grid">
+      <article class="post-card featured">
+        <span class="post-badge">The 10 Traps</span>
+        <h3><a href="/">The Manifesto: 10 Traps Keeping Ghana Stuck</a></h3>
+        <p class="post-excerpt">
+          Ghana isn't just held back by external factors—it's shackled by internal psychological traps. 
+          This foundational essay introduces the framework that shapes everything we explore.
+        </p>
+        <a href="/" class="read-more">Read the Manifesto &rarr;</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- The 10 Traps Series -->
+  <section class="series-section" aria-labelledby="traps-series-heading">
+    <h2 id="traps-series-heading" class="section-title">The 10 Traps Series</h2>
+    <div class="posts-list">
+      <article class="post-item">
+        <span class="post-number">01</span>
+        <div class="post-content">
+          <h3><a href="/traps/survival-mindset/">The Survival Mindset Trap</a></h3>
+          <p class="post-tagline">Trained to focus on daily survival, not legacy or innovation</p>
+        </div>
+      </article>
+      
+      <article class="post-item">
+        <span class="post-number">02</span>
+        <div class="post-content">
+          <h3><a href="/traps/authority-worship/">Authority Worship & Fear of Questioning</a></h3>
+          <p class="post-tagline">Once someone is in power, they're untouchable</p>
+        </div>
+      </article>
+      
+      <article class="post-item">
+        <span class="post-number">03</span>
+        <div class="post-content">
+          <h3><a href="/traps/scarcity-mentality/">Scarcity Mentality</a></h3>
+          <p class="post-tagline">The false belief that wealth and opportunity are limited</p>
+        </div>
+      </article>
+      
+      <article class="post-item">
+        <span class="post-number">04</span>
+        <div class="post-content">
+          <h3><a href="/traps/colonial-logic/">Inherited Colonial Logic</a></h3>
+          <p class="post-tagline">Deep programming that foreign = better</p>
+        </div>
+      </article>
+      
+      <article class="post-item">
+        <span class="post-number">05</span>
+        <div class="post-content">
+          <h3><a href="/traps/short-termism/">Short-Termism (Sakawa Planning)</a></h3>
+          <p class="post-tagline">Everything is about quick gain</p>
+        </div>
+      </article>
+      
+      <article class="post-item">
+        <span class="post-number">06</span>
+        <div class="post-content">
+          <h3><a href="/traps/over-spiritualization/">Religious Over-Spiritualization</a></h3>
+          <p class="post-tagline">Praying for what requires planning</p>
+        </div>
+      </article>
+      
+      <article class="post-item">
+        <span class="post-number">07</span>
+        <div class="post-content">
+          <h3><a href="/traps/inferiority-complex/">Inferiority Complex</a></h3>
+          <p class="post-tagline">Shrinking potential to avoid being seen as proud</p>
+        </div>
+      </article>
+      
+      <article class="post-item">
+        <span class="post-number">08</span>
+        <div class="post-content">
+          <h3><a href="/traps/dependency-programming/">Dependency Programming</a></h3>
+          <p class="post-tagline">Belief that salvation must come from "above"</p>
+        </div>
+      </article>
+      
+      <article class="post-item">
+        <span class="post-number">09</span>
+        <div class="post-content">
+          <h3><a href="/traps/status-symbols/">Status Symbol Syndrome</a></h3>
+          <p class="post-tagline">Prioritizing image over impact</p>
+        </div>
+      </article>
+      
+      <article class="post-item">
+        <span class="post-number">10</span>
+        <div class="post-content">
+          <h3><a href="/traps/not-that-deep/">The "It's Not That Deep" Delusion</a></h3>
+          <p class="post-tagline">Avoiding serious issues with jokes and apathy</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Published Essays -->
+  <section class="published-posts" aria-labelledby="published-heading">
+    <h2 id="published-heading" class="section-title">Published Essays</h2>
+    <div class="posts-list">
+      {% for post in site.posts %}
+        {% unless post.status == 'coming-soon' %}
+        <article class="post-item {% if post.featured %}featured{% endif %}">
+          <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+          <div class="post-content">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="post-tagline">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+            {% if post.featured %}<span class="post-badge">Featured</span>{% endif %}
+          </div>
+        </article>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="coming-soon-section" aria-labelledby="coming-heading">
+    <h2 id="coming-heading" class="section-title">Coming Soon</h2>
+    <p class="coming-description">
+      We're building out deeper essays on each trap, personal stories of trap-breaking, 
+      practical guides, and guest voices from across the Ghanaian diaspora.
+    </p>
+    <div class="coming-list">
+      {% for post in site.posts %}
+        {% if post.status == 'coming-soon' %}
+        <article class="coming-item">
+          <h4>{{ post.title }}</h4>
+          <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
+        </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <p class="coming-cta">
+      <a href="/donate/">Support our work</a> to help us create more content faster, or 
+      <a href="https://x.com/TheNewGhana_x" target="_blank" rel="noopener noreferrer">follow us on X</a> for updates.
+    </p>
+  </section>
+
+  <!-- Categories/Tags for Future -->
+  <section class="categories-section" aria-labelledby="categories-heading">
+    <h2 id="categories-heading" class="section-title">Themes We Explore</h2>
+    <div class="category-tags">
+      <span class="tag">Mindset & Psychology</span>
+      <span class="tag">Entrepreneurship</span>
+      <span class="tag">Politics & Governance</span>
+      <span class="tag">Education & Learning</span>
+      <span class="tag">Faith & Spirituality</span>
+      <span class="tag">Identity & Culture</span>
+      <span class="tag">Economic Freedom</span>
+      <span class="tag">Youth Development</span>
+    </div>
+  </section>
+</div>

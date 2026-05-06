@@ -1,0 +1,14 @@
+<!-- AdSense Display Ad Placeholder -->
+{% if site.adsense.enabled and site.adsense.publisher_id != '' %}
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="{{ site.adsense.publisher_id }}"
+     data-ad-slot="DISPLAY_SLOT_ID"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+{% else %}
+<!-- AdSense placeholder - enable in _config.yml -->
+{% endif %>

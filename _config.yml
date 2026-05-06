@@ -1,0 +1,70 @@
+# Site settings
+title: "TheNewGhanaX"
+tagline: "Unshackling the Ghanaian Mind"
+description: "A thought leadership blog exploring the psychological traps holding Ghanaian youth back—and how to break free."
+baseurl: "" # Leave empty for root domain
+url: "https://thenewghanax.github.io" # Will update with actual domain later
+
+# Author
+author:
+  name: "TheNewGhanaX"
+  email: ""
+  twitter: thenewghanax
+  github: thenewghanax
+
+# Social (for SEO)
+twitter:
+  username: thenewghanax
+  card: summary_large_image
+
+# AdSense (add your publisher ID when ready)
+adsense:
+  enabled: false
+  publisher_id: "" # ca-pub-XXXXXXXXXXXXXXXX
+  auto_ads: false
+
+# SEO Settings
+lang: en
+timezone: Africa/Accra
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  traps:
+    output: true
+    permalink: /traps/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "traps"
+    values:
+      layout: "trap"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - NOTES.txt
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
