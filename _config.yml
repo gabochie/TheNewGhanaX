@@ -2,8 +2,8 @@
 title: "TheNewGhanaX"
 tagline: "Unshackling the Ghanaian Mind"
 description: "A thought leadership blog exploring the psychological traps holding Ghanaian youth back—and how to break free. Latest Ghana news aggregated daily."
-baseurl: "/TheNewGhanaX" # Repository name
-url: "https://gabochie.github.io" # GitHub Pages URL
+baseurl: "/TheNewGhanaX" # Repository name for project site
+url: "https://gabochie.github.io/TheNewGhanaX" # Full GitHub Pages URL
 
 # Author
 author:
