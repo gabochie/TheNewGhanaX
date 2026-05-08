@@ -162,10 +162,21 @@
             <h3>The "Not That Deep" Delusion</h3>
             <p>Avoiding serious issues with jokes and apathy</p>
           </a>
-        </div>
-      </section>
+         </div>
+       </section>
 
-      <!-- Call to Action -->
+       <!-- News Preview Section -->
+       <section class="news-preview-section" aria-labelledby="news-heading">
+         <h2 id="news-heading" class="section-title">Latest Ghana News</h2>
+         <div id="news-preview-feed" class="news-preview-grid">
+           <!-- Preview news will be loaded here by JavaScript -->
+         </div>
+         <div class="news-preview-link">
+           <a href="/news/" class="cta-button">View All News</a>
+         </div>
+       </section>
+
+       <!-- Call to Action -->
       <section class="cta-section">
         <div class="cta-content">
           <h2>Why This Matters</h2>
@@ -215,29 +226,63 @@
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrapper">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <p class="footer-tagline">All Things Are Possible In Ghana. God Lives Here!</p>
-        </div>
-        
-        <nav class="footer-nav">
-          <a href="/">Manifesto</a>
-          <a href="/traps/">The 10 Traps</a>
-          <a href="/blog/">Blog</a>
-          <a href="/donate/">Donate</a>
-          <a href="/about/">About</a>
-        </nav>
-        
-        <nav class="footer-legal">
-          <a href="/privacy/">Privacy Policy</a>
-          <a href="/terms/">Terms of Service</a>
-        </nav>
-        
-        <p class="footer-copyright">&copy; 2026 TheNewGhanaX. Built for Ghanaian youth.</p>
-      </div>
-    </div>
-  </footer>
-</body>
+   <footer class="site-footer">
+     <div class="wrapper">
+       <div class="footer-content">
+         <div class="footer-brand">
+           <p class="footer-tagline">All Things Are Possible In Ghana. God Lives Here!</p>
+         </div>
+         
+         <nav class="footer-nav">
+           <a href="/">Manifesto</a>
+           <a href="/traps/">The 10 Traps</a>
+           <a href="/news/">News</a>
+           <a href="/blog/">Blog</a>
+           <a href="/donate/">Donate</a>
+           <a href="/about/">About</a>
+         </nav>
+         
+         <nav class="footer-legal">
+           <a href="/privacy/">Privacy Policy</a>
+           <a href="/terms/">Terms of Service</a>
+         </nav>
+         
+         <p class="footer-copyright">&copy; 2026 TheNewGhanaX. Built for Ghanaian youth.</p>
+       </div>
+     </div>
+   </footer>
+
+   <!-- News Preview Script -->
+   <script>
+   document.addEventListener('DOMContentLoaded', function() {
+     const previewContainer = document.getElementById('news-preview-feed');
+     if (!previewContainer) return;
+     
+     fetch('/assets/js/news-data.json')
+       .then(response => response.json())
+       .then(news => {
+         const previewNews = news.slice(0, 3);
+         const newsHTML = previewNews.map(item => `
+           <article class="news-card preview">
+             <div class="news-meta">
+               <span class="news-category">${item.category}</span>
+               <span class="news-date">${new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+             </div>
+             <h3 class="news-title">
+               <a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a>
+             </h3>
+             <p class="news-summary">${item.summary}</p>
+             <div class="news-source">
+               <span class="source-name">${item.source}</span>
+             </div>
+           </article>
+         `).join('');
+         previewContainer.innerHTML = newsHTML;
+       })
+       .catch(error => {
+         previewContainer.innerHTML = '<p>Unable to load news preview.</p>';
+       });
+   });
+   </script>
+ </body>
 </html>

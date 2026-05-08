@@ -18,6 +18,7 @@
   
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/news.css' | relative_url }}">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   
   <!-- Favicon -->
@@ -173,6 +174,7 @@
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">Manifesto</a>
         <a href="{{ '/traps/' | relative_url }}">The 10 Traps</a>
+        <a href="{{ '/news/' | relative_url }}">News</a>
         <a href="{{ '/blog/' | relative_url }}">Blog</a>
         <a href="{{ '/donate/' | relative_url }}">Donate</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
@@ -196,6 +198,7 @@
         <nav class="footer-nav">
           <a href="{{ '/' | relative_url }}">Manifesto</a>
           <a href="{{ '/traps/' | relative_url }}">The 10 Traps</a>
+          <a href="{{ '/news/' | relative_url }}">News</a>
           <a href="{{ '/blog/' | relative_url }}">Blog</a>
           <a href="{{ '/donate/' | relative_url }}">Donate</a>
           <a href="{{ '/about/' | relative_url }}">About</a>
@@ -210,5 +213,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- News Aggregator Script -->
+  <script src="{{ '/assets/js/news-aggregator.js' | relative_url }}"></script>
 </body>
 </html>
