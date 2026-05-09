@@ -89,20 +89,76 @@ faq:
 ### Colors
 - Background: `#fafafa`
 - Text: `#1a1a1a`
-- Accent: `#d4a574`
+- Text light: `#666`
+- Accent: `#d4a574` (gold)
 - Accent dark: `#b8935f`
-- Trap color: `#c41e3a`
+- Trap color: `#c41e3a` (red)
 - Border: `#e5e5e5`
 
 ### Layout
 - Keep content centered and narrow: `max-width: 720px`.
-- Use consistent spacing: `1rem`, `1.5rem`, `2.5rem`, `4rem`.
+- Use consistent spacing: `0.5rem`, `1rem`, `1.5rem`, `2.5rem`, `4rem`.
 - Break long sections with headings, quotes, or lists.
 
 ### Links
 - Link color: dark text with accent underline.
-- Hover state: accent or trap color.
+- Hover state: trap color.
 - Use clear link text, not "click here."
+
+## Homepage Components (from index.md)
+
+### Hero Section
+```html
+<div class="manifesto-hero">
+  <p class="tagline">All Things Are Possible In Ghana. God Lives Here!</p>
+  <h1 class="manifesto-title">10 Traps Keeping Ghana Stuck</h1>
+  <p class="manifesto-lead">[Main hook statement]</p>
+  <p class="manifesto-subtitle">[Secondary context]</p>
+  <a href="/traps/" class="cta-button">Explore the 10 Traps</a>
+</div>
+```
+
+### Standard Sections
+```html
+<section class="section">
+  <h2>[Section Title]</h2>
+  <ul>
+    <li>[Bullet point]</li>
+  </ul>
+</section>
+```
+
+### Call-to-Action Section
+```html
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>[CTA Title]</h2>
+    <p>[CTA description]</p>
+    <a href="/traps/" class="cta-button">[Button text]</a>
+  </div>
+</section>
+```
+
+## CSS Classes Reference
+
+### Typography Classes
+- `.tagline` - Uppercase, bold, accent color
+- `.manifesto-title` - Large heading (3.5rem)
+- `.manifesto-lead` - Large lead text (1.375rem)
+- `.manifesto-subtitle` - Secondary text, lighter color
+
+### Component Classes
+- `.manifesto-hero` - Centered hero section
+- `.section` - Standard content section
+- `.cta-section` - Dark background call-to-action
+- `.cta-content` - Centered CTA container
+- `.cta-button` - Primary button style
+
+### Button Styles
+- Background: accent color (`#d4a574`)
+- Text: dark (`#1a1a1a`)
+- Hover: accent dark (`#b8935f`)
+- Transform: translateY(-2px) on hover
 
 ## File Naming
 - Use lowercase, hyphen-separated filenames for posts and pages.
